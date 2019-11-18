@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RETROALIMENTACIÓN</title>
+	<link rel="stylesheet" type="text/css" href="retroalimentacion.css">
+	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script type="text/javascript">
+		function cantidad(){
+			var p1,p2p3,p4,p5,p6,p7,p8;
+			var resultado;
+			if(document.getElementById('r1').checked==true){
+				p1=1;
+			}else{
+				p1=0;
+			}
+			if(document.getElementById('r6').checked==true){
+				p2=1;
+			}else{
+				p2=0;
+			}
+			if(document.getElementById('r11').checked==true){
+				p3=1;
+			}else{
+				p3=0;
+			}
+			if (document.getElementById('r13').checked==true) {
+				p4=1;
+			}else{
+				p4=0;
+			}
+			if (document.getElementById('r17').checked==true) {
+				p5=1;
+			}else{
+				p5=0;
+			}
+			if (document.getElementById('r19').checked==true) {
+				p6=1;
+			}else{
+				p6=0;
+			}
+			if (document.getElementById('r24').checked==true) {
+				p7=1;
+			}else{
+				p7=0;
+			}
+			if (document.getElementById('r27').checked==true) {
+				p8=1;
+			}else{
+				p8=0;
+			}
+
+			resultado=p1+p2+p3+p4+p5+p6+p7+p8;
+			alert("La cantidad de preguntas correctas es: "+resultado);
+		}
+	</script>
+</head>
+
+<body>
+	<nav class="black">
+		<ul>
+			<li><a href="principal.html">INICIO</a></li>
+			<li><a href="modelo osi.html">MODELO OSI</a></li>
+			<li><a href="tipos de redes.html">TIPOS DE REDES</a></li>
+			<li><a class="remarcado" href="retroalimentacion.html">RETROALIMENTACIÓN</a></li>
+		</ul>
+
+	</nav>
+
+	<div class="cuerpo">
+
+
+		<center>
+			<form>
+				<div class="formulario">
+					<div class="radio">
+						<p>¿Qué capa traduce el formato de aplicación al formato de red y viceversa?</p>
+						<input type="radio" id="r1">
+						<label for="r1">Capa6</label>
+
+						<input type="radio" id="r2">
+						<label for="r2">Capa 3</label>
+						<input type="radio" id="r3">
+						<label for="r3">Capa 9</label>
+						<input type="radio" id="r4">
+						<label for="r4">Capa 5</label>
+
+
+						<br>
+						<br>
+						<p>¿Que capa proporciona los servicios de envío, enrutamiento o encaminamiento y control de congestionamiento de los datos?</p>
+						<input type="radio" id="r5">
+						<label for="r5">Capa 4</label>
+						<input type="radio" id="r6">
+						<label for="r6">Capa3</label>
+						<input type="radio" id="r7">
+						<label for="r7">Capa7</label>
+						<input type="radio" id="r8">
+						<label for="r8">Capa 2</label>
+
+						<br>
+						<br>
+						<p>¿Qué tipo de red es la que conecta dispositivos de una empresa, hogar o colegio?.</p>
+						<input type="radio" id="r9">
+						<label for="r9">WAN</label>
+						<input type="radio" id="r10">
+						<label for="r10">MAN</label>
+						<input type="radio" id="r11">
+						<label for="r11">LAN</label>
+						<input type="radio" id="r12">
+						<label for="r12">PAN</label>
+
+						<br>
+						<br>
+						<p>¿Cuántas capas tiene el Modelo OSI?</p>
+						<input type="radio" id="r13">
+						<label for="r13">7 Capas</label>
+						<input type="radio" id="r14">
+						<label for="r14">9 Capas</label>
+						<input type="radio" id="r15">
+						<label for="r15">3 Capas</label>
+						<input type="radio" id="r16">
+						<label for="r16">6 Capas</label>
+
+
+						<br>
+						<br>
+						<p>¿A qué clasificación pertenece la red MAN?</p>
+						<input type="radio" id="r17">
+						<label for="r17">Según su cobertura</label>
+						<input type="radio" id="r18">
+						<label for="r18">Según su topología</label>
+
+						<br>
+						<br>
+						<p>¿A qué clasificación pertenece la red ESTRELLA?</p>
+						<input type="radio" id="r19">
+						<label for="r19">Según su topología</label>
+						<input type="radio" id="r20">
+						<label for="r20">Según su cobertura</label>
+
+						<br>
+						<br>
+						<p>Es una red de ordenadores usada para la comunicación entre los dispositivos de la computadora</p>
+						<input type="radio" id="r21">
+						<label for="r21">PAM</label>
+						<input type="radio" id="r22">
+						<label for="r22">LAN</label>
+						<input type="radio" id="r23">
+						<label for="r23">WAN</label>
+						<input type="radio" id="r24">
+						<label for="r24">PAN</label>
+
+						<br>
+						<br>
+						<p>Es una variación de la red en bus, la falla de un nodo no implica interrupción en las comunicaciones porque se comparte el mismo canal de comunicaciones.</p>
+						<input type="radio" id="r25">
+						<label for="r25">BUS</label>
+						<input type="radio" id="r26">
+						<label for="r26">ESTRELLA</label>
+						<input type="radio" id="r27">
+						<label for="r27">JERÁRQUICA</label>
+
+
+
+						<br>
+						<br>
+						<br>
+						<br>
+
+						<input type="submit" value="CHECAR" onclick="cantidad()">
+				    </div>
+				</div>
+			</form>
+		</center>
+	</div>
+</body>
+</html>

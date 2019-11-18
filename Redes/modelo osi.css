@@ -1,0 +1,169 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div{
+	float: left;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+
+nav.black{
+	background: rgba(0,0,0,0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+
+
+
+nav ul{
+	list-style: none;
+	
+	margin: 0;
+	padding-left: 250px;
+	display: flex;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+nav ul li a{
+	line-height: 80px;
+	color: #000;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+nav.black ul li a{
+	color: #fff;
+}
+
+nav ul li a.remarcado{
+	color: #D99D12;
+	border-radius: 6px;;
+}
+
+nav ul li a:focus{
+	outline: none;
+}
+
+nav ul li a:hover{
+	color: #D99D12;
+	border-radius: 6px;
+}
+
+
+div.sec1{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.header-video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header-video video{
+	min-width: 100%;
+	min-height: 100%%;
+}
+
+.sec1:before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #bbb;
+	opacity: 0;
+	position: absolute;
+}
+
+.a{
+	color: #fff;
+	font-family: ocr a;
+	font-size: 90px;
+	padding-left: 15px;
+	position: relative;
+	margin-top: 130px;
+	text-align: center;
+}
+.b{
+	color: #fff;
+	font-family: Courier New;
+	font-size: 30px;
+	padding-left: 15px;
+	position: relative;
+	font-weight: normal;
+	text-align: center;
+}
+
+nav{
+	z-index: 1;
+}
+
+h1, h5{
+	z-index: 1;
+}
+
+.info{
+	margin-top: 100px;
+	width: 100%;
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	overflow: hidden;
+	padding: 150px 220px;
+}
+.sobre-nosotros{
+	text-align: center;
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.parrafo{
+	font-family: calibri light;
+	font-weight: normal;
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 24px;
+	color: rgb(24,16,16);
+}
+
+.capa{
+	font-family: Agency FB;
+	text-align: center;
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #19BDFF;
+}
+
+

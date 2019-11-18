@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MODELO OSI</title>
+	<link rel="stylesheet" type="text/css" href="modelo osi.css">
+
+	
+</head>
+<body>
+
+	<div class="header-video">
+		<video src="The Background - 22126.mp4" autoplay loop></video>
+	</div>
+
+	<nav class="black">
+		<ul>
+			<li><a href="principal.html">INICIO</a></li>
+			<li><a class="remarcado" href="modelo osi.html">MODELO OSI</a></li>
+			<li><a href="tipos de redes.html">TIPOS DE REDES</a></li>
+			<li><a href="retroalimentacion.html">RETROALIMENTACIÓN</a></li>
+		</ul>
+
+	</nav>
+
+	<div class="sec1">
+		<h1 class="a">¿QUÉ ES EL MODELO OSI?</h1>
+		<p><h5 class="b" align="justify">Se trata de un modelo de comunicaciones estándar entre los diferentes terminales y host. Las comunicaciones siguen unas pautas de siete niveles preestablecidos que son: Aplicación, Presentación, Sesión, Transporte, Red, Enlace y Física.</h5></p>
+	</div>
+
+	<main>
+		<section class="info">
+			<div class="contenedor">
+				<h2 class="capa"> CAPA 7: APLICACIÓN</h2>
+				<p class="parrafo">
+
+					La capa de aplicación es la capa del modelo OSI más cercana al usuario, por esta razón es también el nivel que tiene el mayor número de protocolos existentes, ya que los usuarios son los que tienen un gran número de necesidades.
+
+					<p class="parrafo">Este nivel recibe las informaciones que viene del usuario que llamamos SDU (Service Data Unit) y adiciona la información de control que llamamos de PCI (Protocol Control Information) para que tengamos como salida la conocida PDU (Protocol Data Unit).
+
+					<p class="parrafo">Los protocolos más conocidos de esta capa son: NFS, AFP, HTTP, SMTP, FTP, SSH, Telnet, SIP, RDP, IRC, SNMP, NNTP, POP3, IMAP, BitTorrent, DNS, entre otros.
+				</p>
+				<center><img src="Aplicaciones-TCP-IP.jpg" width="500px" height="400px"></center>
+				<br>
+				<br>
+
+
+				<h2 class="capa"> CAPA 6: PRESENTACIÓN</h2>
+				<p class="parrafo">Tiene como función básica encargarse del formato en que se va a mostrar la información. Establece el contexto entre elementos del nivel de aplicación, determinando la sintaxis y la semántica de los símbolos empleados para representar la información, traduciendo el formato de aplicación al formato de red y viceversa.</p>
+				
+				<center><img src="componentes-capa-presentacion.png" width="500px" height="400px"></center>
+				<br>
+				<br>
+
+
+				<h2 class="capa">CAPA 5: SESIÓN</h2>
+				<p class="parrafo">Ésta capa tiene como principal objetivo permitir que los usuarios de diferentes máquinas establezcan sesiones entre ellos.</p>
+				<p class="parrafo">Las funciones de la capa de Sesión crean y mantienen diálogos entre las aplicaciones de usuario en el origen y el destino.</p>
+				<p class="parrafo">Servicios que proporciona la Capa de Sesión:
+
+				<br>– Sincronización
+				<br>– Intercambio de datos
+				<br>– Administración del Diálogo</p>
+				<center><img src="slide_9.jpg" width="550px" height="450px"></center>
+				<br>
+				<br>
+
+
+				<h2 class="capa">CAPA 4: TRANSPORTE</h2>
+				<p class="parrafo">Ésta  capa se encarga de brindar un transporte confiable asegurando que los datos lleguen sin errores y en la secuencia correcta, coordina múltiples aplicaciones que interactúen en la red simultáneamente de tal forma que los datos enviados por una aplicación sean recibidos por la aplicación correspondiente.</p>
+				
+				<center><img src="CAPA-4.jpg" width="295px" height="392px"></center>
+				<br>
+				<br>
+
+				<h2 class="capa">CAPA 3: RED</h2>
+				<p class="parrafo">La capa de red principalmente, proporciona los servicios de envío, enrutamiento o encaminamiento y control de congestionamiento de los datos (paquetes de datos) de un nodo a otro en la red. Su proposito es simple:  formar una interfase entre los usuarios de una máquina y la red, esto es, la red es controlada por esta capa y las 2 primeras.</p>
+				
+				<center><img src="cc7852465569274d-952e-485b-8e02-801618735c7ees-es.gif" width="491px" height="399px"></center>
+				<br>
+				<br>
+
+				<h2 class="capa">CAPA 2: ENLACE</h2>
+				<p class="parrafo">Como objetivo o tarea principal, la capa de enlace de datos se encarga de tomar una transmisión de datos ” cruda ” y transformarla en una abstracción libre de errores de transmisión para la capa de red.  Este proceso se lleva a cabo dividiendo los datos de entrada en marcos de datos (de unos cuantos cientos de bytes), transmite los marcos en forma secuencial, y procesa los marcos de estado que envía el nodo destino.</p>
+				<center><img src="4.3.5.jpg" width="500px" height="326px"></center>
+				<br>
+				<br>
+
+				<h2 class="capa">CAPA 1: FÍSICA</h2>
+				<p class="parrafo">En la capa física se tratan temas como los tipos de conectores, tipos de cable, las tensiones, el pin-outs, entre otros. Ésta es la responsable del envío de la información sobre el sistema hardware utilizado en cada caso</p>
+				<p class="parrafo">Por lo tanto, las tareas más importantes realizadas por esta capa son las siguientes:
+
+				<p class="parrafo">-Transmitir los bits de información a través del medio utilizado para la transmisión.</p>
+				<p class="parrafo">-Transformar una trama de datos proveniente del nivel de enlace en una señal adecuada al medio físico utilizado en la transmisión.</p>
+				</p>
+				<center><img src="slide_3.jpg" width="600px" height="400px"></center>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+
+<head>
+
+<title> R E T R O A L I M E N T A C I Ó N </title>
+
+<script>
+
+	function resultado() {
+
+		var p1=0;
+		var p2=0;
+		var p3=0;
+		var p4=0;
+		var p5=0;
+		var nota=0;
+
+		if (document.getElementById('p11').checked==true) {
+			p1=1;
+		}else {
+			p1=0;
+		}
+
+		if(document.getElementById('p16').checked==true) {
+			p5=1;
+		}else{
+			p5=0;
+		}
+
+		if (document.getElementById('p22').checked==true) {
+			p2=1;
+		} else {
+			p2=0;
+		}
+
+
+		if (document.getElementById('p33').checked==true) {
+			p3=1;
+		}else {
+			p3=0;
+		}
+
+		if (document.getElementById('p44').checked==true) {
+			p4=1;
+		}else {
+			p4=0;
+		}
+
+		 
+
+		nota=p1+p2+p3+p4+p5;
+
+		alert(" Aciertos: " + nota);
+
+		location.reload();
+	}
+
+</script>
+
+</head>
+
+<BODY bgcolor= "336BFF">
+
+
+<h2><CENTER>R E T R O A L I M E N T A C I Ó N</CENTER></h2>
+
+<hr>
+
+<form style="font:normal 16px sans-serif">
+
+<p> ¿Cuál red social tiene alrededor de mil millones de usuarios?.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> Facebook.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> Twitter.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> Instagram.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> Vine.</p>
+
+
+<p> ¿Qué tipo de red es la que conecta dispositivos de una empresa, hogar o colegio?.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p15"> WAN.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p16"> LAN.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p17"> PAN.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p18"> MAN.</p>
+
+
+<p>¿En qué país Facebook, Twitter, Google y Youtube no son bienvenidos?</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> Egipto.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> China.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> Canadá.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> Irán.</p>
+
+
+<p>Conjunto de dispositivos de red interconectados fisicamente a través de un medio de comunicación alámbrico o inalámbrico:.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> GETTEXTTT.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> Nodo de conmutación.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> Red informática.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> Internet.</p>
+
+ 
+
+<p>¿Cuántas capas tiene el modelo OSI?.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> 5 Capas.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> 12 Capas.</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> 8 Capas.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> 7 Capas.</p>
+
+<hr>
+
+<center><p><input type="button" value=" R E S U L T A D O " onclick="resultado()"></p></center>
+
+</form>
+
+</body>
+
+</html>
